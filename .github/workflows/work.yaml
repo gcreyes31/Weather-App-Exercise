@@ -1,13 +1,32 @@
 name: First Workflow
 on: 
   push:
+
 jobs: 
   show_date:
     runs-on: ubuntu-latest
     steps:
     - name: show date
       run: echo "The current date is $(date)"
-    - name: simulate a fail
-      run: exit 1
     - name: show current branch
       run: echo ${{github.ref_name}}
+
+  test_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: setup JDK
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: setup maven
+      uses: stCarolas/setup-maven@v4.3
+      with:
+        maven-version: 3.8.5
+
+    - name: checkout the source
+      uses: actions/checkout@v3
+
+    - name: run test
+      run: mvn clean test
