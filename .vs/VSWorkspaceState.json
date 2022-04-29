@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src\\main",
+    "\\src\\main\\java",
+    "\\src\\main\\java\\dipsa",
+    "\\src\\main\\java\\dipsa\\cicd",
+    "\\src\\main\\java\\dipsa\\cicd\\weather",
+    "\\src\\main\\java\\dipsa\\cicd\\weather\\controllers",
+    "\\src\\main\\java\\dipsa\\cicd\\weather\\models",
+    "\\src\\main\\java\\dipsa\\cicd\\weather\\services"
+  ],
+  "SelectedNode": "\\mvnw.cmd",
+  "PreviewInSolutionExplorer": false
+}
