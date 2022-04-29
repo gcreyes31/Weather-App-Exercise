@@ -1,0 +1,11 @@
+name: First Workflow
+on: 
+  push:
+jobs: 
+  show_date:
+    runs-on: windows
+    steps:
+    - name: show date
+      run: echo "The current date is $(date)"
+    - name: show current branch
+      run: echo ${{github.ref_name}}
