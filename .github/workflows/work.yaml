@@ -7,5 +7,7 @@ jobs:
     steps:
     - name: show date
       run: echo "The current date is $(date)"
+    - name: simulate a fail
+      run: exit 1
     - name: show current branch
       run: echo ${{github.ref_name}}
