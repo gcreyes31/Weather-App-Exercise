@@ -13,6 +13,8 @@ jobs:
 
   test_and_deploy:
     runs-on: ubuntu-latest
+    env:
+      OPENWEATHERMAP_API: ${{secrets.openweathermap_api}}
     steps:
     - name: setup JDK
       uses: actions/setup-java@v3
