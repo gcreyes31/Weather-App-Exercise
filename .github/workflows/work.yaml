@@ -1,6 +1,6 @@
 name: First Workflow
 on: 
-  push
+  push:
 jobs: 
   show_date:
     runs-on: ubuntu-latest
