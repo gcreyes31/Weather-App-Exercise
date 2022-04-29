@@ -3,7 +3,7 @@ on:
   push
 jobs: 
   show_date:
-    runs-on: windows
+    runs-on: ubuntu-latest
     steps:
     - name: show date
       run: echo "The current date is $(date)"
